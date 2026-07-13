@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="47c218d953998f10b4af58e0a0490e42" label="RCCA Reference" max_length="40" name="x_58872_needit_rcca_reference" type="collection">
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Value" max_length="255" name="value" type="string"/>
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element choice="1" label="Type" max_length="40" name="type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Status" sequence="1" value="status"/>
+                <element inactive_on_update="false" label="End-User Impacted" sequence="5" value="end_user_impacted"/>
+                <element inactive_on_update="false" label="Multi-site Assessment" sequence="3" value="multi_site_assessment"/>
+                <element inactive_on_update="false" label="Incident Source" sequence="0" value="incident_source"/>
+                <element inactive_on_update="false" label="Observed Impact" sequence="4" value="observed_impact"/>
+                <element inactive_on_update="false" label="Task Owner External" sequence="2" value="task_owner_external"/>
+            </choice>
+        </element>
+        <element label="Filed ID" max_length="40" name="filed_id" type="float"/>
+    </element>
+</database>
